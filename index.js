@@ -1,7 +1,11 @@
+// let form = new FormData();
 const myApp = () => {
   const handleFileSelect = (e) => {
     // Creating form:
     let form = new FormData();
+    // Opening XHR:
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", 'server.js', true);
     // Creating key for the selected files:
     window.crypto.subtle.generateKey(
       {
@@ -15,14 +19,19 @@ const myApp = () => {
       // Returns the key:
       console.log("\nKey:");
       console.log(key);
-      for (const file of e.target.files) {
+      const files = e.target.files;
+      console.log(files);
+      for (const file of files) {
         const reader = new FileReader();
         reader.onload = (e) => {
+          const iv = window.crypto.getRandomValues(new Uint8Array(12));
+          // Updating the XHR header:
+          xhr.setRequestHeader("iv-list", iv);
           // Encrypting file:
           window.crypto.subtle.encrypt(
             {
               name: "AES-GCM",
-              iv: window.crypto.getRandomValues(new Uint8Array(12))
+              iv: iv
             },
             key,
             e.target.result
@@ -33,6 +42,15 @@ const myApp = () => {
             console.log(new Uint8Array(encrypted));
             // Appending new data to form:
             form.append('encrypted', new Blob([encrypted], {type:"application/octet-stream"}));
+            // console.log(`Last file: ${files[files.length - 1].name}`);
+            // console.log(`Current file: ${file.name}`);
+            if (form.getAll("encrypted").length === files.length) {
+              // Returns encrypted values on the form:
+              console.log("\nEncrypted blobs:");
+              console.log(form.getAll("encrypted"));
+              // Sending XHR:
+              // xhr.send(form);
+            }
           })
           .catch(function(err){
               console.error(err);
