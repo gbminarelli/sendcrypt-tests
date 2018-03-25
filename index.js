@@ -1,11 +1,11 @@
-// let form = new FormData();
 const myApp = () => {
   const handleFileSelect = (e) => {
     // Creating form:
     let form = new FormData();
     // Opening XHR:
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", 'server.js', true);
+    xhr.open("POST", '/', true);
+    // xhr.setRequestHeader('Content-Type','multipart/form-data; boundary=AaB03x');
     // Creating key for the selected files:
     window.crypto.subtle.generateKey(
       {
@@ -17,10 +17,9 @@ const myApp = () => {
     )
     .then((key) => {
       // Returns the key:
-      console.log("\nKey:");
-      console.log(key);
+      // console.log("\nKey:");
+      // console.log(key);
       const files = e.target.files;
-      console.log(files);
       for (const file of files) {
         const reader = new FileReader();
         reader.onload = (e) => {
@@ -38,18 +37,22 @@ const myApp = () => {
           )
           .then((encrypted) => {
             // Returns an ArrayBuffer containing the encrypted data:
-            console.log("\nEncrypted data:");
-            console.log(new Uint8Array(encrypted));
+            // console.log("\nEncrypted data:");
+            // console.log(new Uint8Array(encrypted));
             // Appending new data to form:
             form.append('encrypted', new Blob([encrypted], {type:"application/octet-stream"}));
-            // console.log(`Last file: ${files[files.length - 1].name}`);
-            // console.log(`Current file: ${file.name}`);
             if (form.getAll("encrypted").length === files.length) {
               // Returns encrypted values on the form:
-              console.log("\nEncrypted blobs:");
-              console.log(form.getAll("encrypted"));
-              // Sending XHR:
-              // xhr.send(form);
+              // console.log("\nEncrypted blobs:");
+              // console.log(form.getAll("encrypted"));
+              // for (const key of form.keys()) {
+              //   console.log(key);
+              // }
+              // for (const value of form.values()) {
+              //   console.log(value);
+              // }
+              // Sending form:
+              xhr.send(form);
             }
           })
           .catch(function(err){
@@ -65,8 +68,8 @@ const myApp = () => {
       )
       .then((keydata) => {
         // Returns the exported key data:
-        console.log("\nKeydata:");
-        console.log(keydata);
+        // console.log("\nKeydata:");
+        // console.log(keydata);
         document.getElementById("secure-link").innerText = `Your secure link is: ${window.location.href}#${keydata.k}`;
       })
       .catch((err) => {

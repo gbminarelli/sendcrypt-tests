@@ -1,0 +1,23 @@
+{
+  "name": "sendcrypt-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbminarelli/sendcrypt-tests.git"
+  },
+  "author": "Gianlucci Badiali Minarelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbminarelli/sendcrypt-tests/issues"
+  },
+  "homepage": "https://github.com/gbminarelli/sendcrypt-tests#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "multer": "^1.3.0"
+  }
+}
