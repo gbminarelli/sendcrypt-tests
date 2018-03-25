@@ -17,15 +17,16 @@ const myApp = () => {
     )
     .then((key) => {
       // Returns the key:
-      // console.log("\nKey:");
-      // console.log(key);
+      console.log("\nKey:");
+      console.log(key);
       const files = e.target.files;
       for (const file of files) {
         const reader = new FileReader();
         reader.onload = (e) => {
           const iv = window.crypto.getRandomValues(new Uint8Array(12));
+          console.log(file);
           // Updating the XHR header:
-          xhr.setRequestHeader("iv-list", iv);
+          xhr.setRequestHeader("IV-List", iv);
           // Encrypting file:
           window.crypto.subtle.encrypt(
             {
@@ -68,9 +69,9 @@ const myApp = () => {
       )
       .then((keydata) => {
         // Returns the exported key data:
-        // console.log("\nKeydata:");
-        // console.log(keydata);
-        document.getElementById("secure-link").innerText = `Your secure link is: ${window.location.href}#${keydata.k}`;
+        console.log("\nKeydata:");
+        console.log(keydata);
+        document.getElementById("secure-link").innerText = `Your secure link is: ${window.location.origin}/#${keydata.k}`;
       })
       .catch((err) => {
         console.error(err);
@@ -81,6 +82,50 @@ const myApp = () => {
     });
   };
   document.getElementById('files').addEventListener('change', handleFileSelect, false);
+  if (window.location.hash) {
+    // Opening XHR:
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", '/decrypt', true);
+    // Returns the secret key:
+    console.log(`Secret key: ${window.location.hash.slice(1)}`);
+    // Importing key:
+    window.crypto.subtle.importKey(
+      "jwk",
+      {
+          kty: "oct",
+          k: window.location.hash.slice(1),
+          alg: "A256GCM",
+          ext: true,
+      },
+      {
+          name: "AES-GCM",
+      },
+      false,
+      ["encrypt", "decrypt"]
+    )
+    .then((key) => {
+      // window.crypto.subtle.decrypt(
+      //   {
+      //     name: "AES-GCM",
+      //     iv: ArrayBuffer(12), //The initialization vector you used to encrypt
+      //     additionalData: ArrayBuffer, //The addtionalData you used to encrypt (if any)
+      //     tagLength: 128, //The tagLength you used to encrypt (if any)
+      //   },
+      //   key, //from generateKey or importKey above
+      //   data //ArrayBuffer of the data
+      // )
+      // .then(function(decrypted){
+      //   //returns an ArrayBuffer containing the decrypted data
+      //   console.log(new Uint8Array(decrypted));
+      // })
+      // .catch(function(err){
+      //   console.error(err);
+      // });
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+  }
 }
 
 window.onload = myApp;
