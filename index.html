@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="index.js"></script>
+  <!-- <script type="text/javascript" src="formDataMulterTest.js"></script> -->
+  <title>SendCrypt - Encryption Test</title>
+</head>
+<body>
+  <div id="root">
+    <h2>Encrypt Files</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div class="file-encrypt-wrapper">
+        <input type="file" name="encrypt-files" id="encrypt-files" multiple>
+      </div>
+    </form>
+    <h2>Decrypt File</h2>
+    <!-- <form action="/" method="get" enctype="multipart/form-data"> -->
+    <form action="#" method="get">
+      <div class="file-decrypt-wrapper">
+        <input type="file" name="decrypt-file" id="decrypt-file">
+      </div>
+    </form>
+    <div style="display: none">
+      <a download="myFile.png" id="download-link">DOWNLOAD</a>
+    </div>
+    <div style="display: none">
+      <h2>Secure Link:</h2>
+      <div id="secure-link"></div>
+    </div>
+  </div>
+</body>
+</html>
