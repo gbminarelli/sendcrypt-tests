@@ -1,0 +1,160 @@
+/* ------------------------------------------------------------|
+| NAVBAR
+*-------------------------------------------------------------*/
+
+header {
+    font-family: 'Helvetica Neue', serif;
+    display: inline-block;
+    float: left;
+    position: fixed;
+}
+
+nav {
+    display: inline-block;
+    float: left;
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.sendcrypt-logo {
+    width: 180px;
+    height: 23px;
+    margin-top: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.navbar-menu {
+    font-size: .9rem;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: right;
+    box-sizing: border-box;
+}
+
+.navbar-menu li {
+    display: inline-block;
+    float: left;
+    padding: 1.3rem;
+    box-sizing: border-box;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: inherit;
+    text-underline: none;
+}
+
+.navbar-item-active {
+    border-bottom: .3rem solid #355FF2;
+
+}
+
+.navbar-menu-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1.7rem;
+    font-size: 1.6rem;
+    color: #262626;
+}
+
+/*DESKTOP ONLY CODE*/
+
+@media screen and (min-width: 900px) {
+    .wrapper {
+        max-width: 1600px;
+        box-sizing: border-box;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin: 0 auto;
+        display: block;
+
+    }
+
+    .desktop-only {
+        display: block;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+}
+
+/*MOBILE ONLY CODE*/
+@media screen and (max-width: 900px) {
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .wrapper {
+
+        box-sizing: border-box;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin: 0 auto;
+        display: block;
+
+    }
+}
+
+/* NAVBAR MENU MOBILE =========================================== */
+
+.navbar-menu-mobile {
+    font-size: .9rem;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+
+}
+
+.navbar-menu-mobile li {
+
+    display: inline-block;
+    float: left;
+    padding: .8rem;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 100%;
+    margin-bottom: .4rem;
+}
+
+.navbar-menu-mobile li:hover {
+    background-color: #F7F7F7;
+}
+
+.navbar-menu-mobile li a {
+    min-width: 100%;
+    text-decoration: none;
+    color: inherit;
+    text-underline: none;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------|
+| MAIN
+*-------------------------------------------------------------*/
+
+main {
+    background-color: #1E1E1E;
+    height: auto;
+
+}
+
+.main-section-svg {
+    padding-top: 4rem;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+}
+
