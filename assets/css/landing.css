@@ -159,6 +159,7 @@ nav {
 main {
     background-color: #1E1E1E;
     height: auto;
+    position:relative;
 
 }
 
@@ -177,15 +178,68 @@ main {
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
-    width:215px;
-    height:126px;
+
     z-index: 1;
     position:absolute;
     top:10rem;
     left:5rem;
+    width:215px;
+    height: 126px;
 
-    transform: scale(.5);
+}
 
 
+
+.main-section {
+    width:100vw;
+    height:80vh;
+    background: url('../gfx/background.svg') no-repeat center ;
+    background-size: cover;
+}
+
+#server,#server2 {
+    position:absolute;
+    width:10rem;
+    z-index:2;
+}
+
+
+/*MOBILE ONLY CODE*/
+@media screen and (max-width: 900px) {
+    #server {
+        max-height: 10rem;
+        top: 15vh;
+        left: 53vw;
+    }
+
+    #server2 {
+        max-height: 10rem;
+        top: 48vh;
+        left: 4vw;
+    }
+    .square {
+        transform:scale(0.5);
+    }
+}
+
+/*DESKTOP ONLY CODE*/
+
+@media screen and (min-width: 900px) {
+
+    #server {
+        max-height: 15rem;
+        top: 14vh;
+        left: 71vw;
+    }
+
+
+    #server2 {
+        max-height: 15rem;
+        top: 48vh;
+        left: 4vw;
+    }
+    .square {
+        transform:scale(0.8);
+    }
 }
 

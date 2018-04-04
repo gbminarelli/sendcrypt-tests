@@ -12,7 +12,7 @@ $(function () {
     let windowWidth = window.innerWidth;
     let windowHeight = window.innerHeight;
 
-    console.log(windowWidth)
+    // console.log(windowWidth)
 
     let square_container = {
         max_width: windowWidth,
@@ -30,7 +30,7 @@ $(function () {
         squares.push(newSquare);
     }
 
-    console.log(squares);
+    // console.log(squares);
 
 
     //create squares on image
@@ -58,7 +58,7 @@ $(function () {
             .fadeToggle(500);
 
 
-    }, 2000)
+    }, 1000)
 
 
 });
