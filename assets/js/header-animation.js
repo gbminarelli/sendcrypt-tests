@@ -30,7 +30,7 @@ $(function () {
         squares.push(newSquare);
     }
 
-    console.log(squares);
+    // console.log(squares);
 
 
     //create squares on image
@@ -59,7 +59,7 @@ $(function () {
 
 
 
-    }, 1000)
+    }, 200)
 
 
 });

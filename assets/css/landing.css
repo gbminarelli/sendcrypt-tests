@@ -153,7 +153,7 @@ nav {
 }
 
 /* ------------------------------------------------------------|
-| MAIN
+| MAIN (Landing CTA)
 *-------------------------------------------------------------*/
 
 main {
@@ -176,9 +176,8 @@ main {
     height: 80vh;
     background: url('../gfx/background.svg') no-repeat center;
     background-size: cover;
-    position:relative;
+    position: relative;
 }
-
 
 .main-section-title {
 
@@ -189,55 +188,46 @@ main {
     font-family: 'Quicksand', serif;
     font-weight: bolder;
     color: white;
-    z-index:3;
-    left:0;
-    position:absolute;
-            box-sizing: border-box;
-
+    z-index: 3;
+    left: 0;
+    position: absolute;
+    box-sizing: border-box;
 
 }
 
 .main-section-subtitle {
-    font-size:1.1rem;
+    font-size: 1.1rem;
     font-weight: normal;
     display: block;
-    margin-top:.5rem;
+    margin-top: .5rem;
 
 }
-
-
-
 
 /*MOBILE ONLY CODE*/
 @media screen and (max-width: 900px) {
 
     .main-section-title {
-        top:calc((100vh - 60%)/2);
+        top: calc((100vh - 70%) / 2);
         font-size: 2.3rem;
-        padding-left:2rem;
-        padding-right:2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
 
     }
 }
-
 
 /*DESKTOP ONLY CODE*/
 
 @media screen and (min-width: 900px) {
     .main-section-title {
-        top:35vh;
+        top: 35vh;
     }
 
     .main-section-subtitle {
-        font-size:1.5rem;
-
+        font-size: 1.5rem;
 
     }
 
 }
-
-
-
 
 /* HEADER IMG ANIMATIONS =========================================== */
 
@@ -255,8 +245,6 @@ main {
     height: 126px;
 
 }
-
-
 
 #server, #server2 {
     position: absolute;
@@ -302,5 +290,75 @@ main {
     .square {
         transform: scale(0.8);
     }
+}
+
+/* ------------------------------------------------------------|
+| SECTIONS
+*-------------------------------------------------------------*/
+
+/* First Section =========================================== */
+
+.section-first {
+    display: inline-block;
+    float: left;
+    background-color: white;
+    width: 100%;
+    height: 30rem;
+    box-sizing: border-box;
+}
+
+.section-first-header {
+    background-color: #1E1E1E;
+    color: white;
+    font-family: Quicksand, serif;
+    font-size: 1.7rem;
+    padding: 1rem 1rem 1.5rem;
+    font-weight: bolder;
+    text-align:center;
+}
+
+.section-first-content {
+    color: #495F7F;
+    font-size: 1rem;
+    font-family: "Quicksand Light", serif;
+    padding: 1rem;
+    text-align:center;
+    margin-top:1rem;
+}
+
+/* Crossbrowser platform =========================================== */
+
+.cross-browser-wrapper {
+    /*border: solid 1px hotpink;*/
+    box-sizing: border-box;
+    width:100%;
+    display: inline-block;
+    float:left;
+    margin-top:0.3rem;
+}
+
+.cross-browser-wrapper > h1 {
+    font-family: "Quicksand Light", serif;
+    font-weight: bold;
+    font-size:1.2rem;
+    color:#333333;
+    padding:1rem;
+    display: block;
+    width: 100%;
+    /*border: solid 1px hotpink;*/
+            box-sizing: border-box;
+    text-align: center;
+}
+
+.crossbrowser-icon {
+    display: inline-block;
+    max-width: 67px;
+    max-height: 67px;
+    margin:0 auto;
+}
+
+.crossbrowser-icon:nth-of-type(2) {
+    padding-left:1.5rem;
+    padding-right:1.5rem;
 }
 
