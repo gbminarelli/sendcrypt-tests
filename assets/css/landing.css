@@ -159,7 +159,7 @@ nav {
 main {
     background-color: #1E1E1E;
     height: auto;
-    position:relative;
+    position: relative;
 
 }
 
@@ -170,39 +170,99 @@ main {
     box-sizing: border-box;
 }
 
+/* MAIN SECTION CONTENT =========================================== */
+.main-section {
+    width: 100vw;
+    height: 80vh;
+    background: url('../gfx/background.svg') no-repeat center;
+    background-size: cover;
+    position:relative;
+}
+
+
+.main-section-title {
+
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    font-size: 3.2rem;
+    font-family: 'Quicksand', serif;
+    font-weight: bolder;
+    color: white;
+    z-index:3;
+    left:0;
+    position:absolute;
+            box-sizing: border-box;
+
+
+}
+
+.main-section-subtitle {
+    font-size:1.1rem;
+    font-weight: normal;
+    display: block;
+    margin-top:.5rem;
+
+}
+
+
+
+
+/*MOBILE ONLY CODE*/
+@media screen and (max-width: 900px) {
+
+    .main-section-title {
+        top:calc((100vh - 60%)/2);
+        font-size: 2.3rem;
+        padding-left:2rem;
+        padding-right:2rem;
+
+    }
+}
+
+
+/*DESKTOP ONLY CODE*/
+
+@media screen and (min-width: 900px) {
+    .main-section-title {
+        top:35vh;
+    }
+
+    .main-section-subtitle {
+        font-size:1.5rem;
+
+
+    }
+
+}
+
+
+
 
 /* HEADER IMG ANIMATIONS =========================================== */
 
 .square {
-    background-image:url('../gfx/square.png');
-    background-repeat:no-repeat;
+    background-image: url('../gfx/square.png');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     z-index: 1;
-    position:absolute;
-    top:10rem;
-    left:5rem;
-    width:215px;
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+    width: 215px;
     height: 126px;
 
 }
 
 
 
-.main-section {
-    width:100vw;
-    height:80vh;
-    background: url('../gfx/background.svg') no-repeat center ;
-    background-size: cover;
+#server, #server2 {
+    position: absolute;
+    width: 10rem;
+    z-index: 2;
 }
-
-#server,#server2 {
-    position:absolute;
-    width:10rem;
-    z-index:2;
-}
-
 
 /*MOBILE ONLY CODE*/
 @media screen and (max-width: 900px) {
@@ -217,8 +277,9 @@ main {
         top: 48vh;
         left: 4vw;
     }
+
     .square {
-        transform:scale(0.5);
+        transform: scale(0.5);
     }
 }
 
@@ -232,14 +293,14 @@ main {
         left: 71vw;
     }
 
-
     #server2 {
         max-height: 15rem;
         top: 48vh;
         left: 4vw;
     }
+
     .square {
-        transform:scale(0.8);
+        transform: scale(0.8);
     }
 }
 

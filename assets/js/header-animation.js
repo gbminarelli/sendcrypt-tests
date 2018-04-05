@@ -30,7 +30,7 @@ $(function () {
         squares.push(newSquare);
     }
 
-    // console.log(squares);
+    console.log(squares);
 
 
     //create squares on image
@@ -51,11 +51,12 @@ $(function () {
         $(".square").fadeOut();
         //pickup random square and fade in and fade out
         let n = Math.floor(Math.random() * squares.length);
+        let otherSquares = $(`.square[data-id!=${n}]`); //assure that other squares are not visible
         let animatedSquare = $(`.square[data-id=${n}]`);
         // console.log(`Animating square ${n}`);
-        animatedSquare
+        otherSquares.fadeOut();
+        animatedSquare.fadeToggle(500);
 
-            .fadeToggle(500);
 
 
     }, 1000)
