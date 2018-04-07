@@ -76,7 +76,7 @@ nav {
 
 /*DESKTOP ONLY CODE*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1080px) {
 
     .desktop-only {
         display: block;
@@ -89,7 +89,7 @@ nav {
 }
 
 /*MOBILE ONLY CODE*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
 
     .desktop-only {
         display: none;
@@ -191,7 +191,7 @@ main {
 }
 
 /*MOBILE ONLY CODE*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
 
     .main-section-title {
         top: calc(77.2vh / 2);
@@ -204,7 +204,7 @@ main {
 
 /*DESKTOP ONLY CODE*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1080px) {
     .main-section-title {
         top: 35vh;
     }
@@ -240,7 +240,7 @@ main {
 }
 
 /*MOBILE ONLY CODE*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
     #server {
         max-height: 10rem;
         top: 15vh;
@@ -260,7 +260,7 @@ main {
 
 /*DESKTOP ONLY CODE*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1080px) {
 
     #server {
         max-height: 15rem;
@@ -323,15 +323,13 @@ main {
 
 .section-first-table {
     box-sizing: border-box;
-    padding-top: 3.4rem;
-    padding-right: 5rem;
-    padding-left: 1rem;
+    padding-left:2rem;
 }
 
 .section-table-img {
     min-width: 100%;
     height: auto;
-    padding-right: 4rem;
+
 
 }
 
@@ -387,7 +385,7 @@ section {
 
 .section-img img {
 
-    padding-top: 3rem;
+    padding-top: 2rem;
 
     margin: 0 auto;
     display: block;
@@ -398,7 +396,7 @@ section {
 
 /*DESKTOP ONLY CODE*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1080px) {
 
     .section-align-left {
         text-align: left;
@@ -422,7 +420,7 @@ section {
 
 /*DESKTOP ONLY CODE*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1080px) {
 
     .section-first-header {
         text-align: left;
@@ -438,7 +436,7 @@ section {
 
  .cross-browser-icon-wrapper {
 
-     border: solid 1px hotpink;
+     /*border: solid 1px hotpink;*/
              box-sizing: border-box;
 
      width:100%;
@@ -455,7 +453,7 @@ section {
     padding: 1rem;
     display: block;
     width: 100%;
-    border: solid 1px hotpink;
+    /*border: solid 1px hotpink;*/
     box-sizing: border-box;
     text-align: center;
     margin-top: 0.8rem;
@@ -484,7 +482,7 @@ section {
 }
 
 /*MOBILE ONLY CODE*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
 
     .wrapper {
         padding-left: 2rem;
@@ -494,11 +492,11 @@ section {
 
 /*DESKTOP ONLY CODE*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1080px) {
 
     .wrapper {
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 13rem;
+        padding-right: 13rem;
     }
 }
 
