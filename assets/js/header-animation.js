@@ -55,11 +55,11 @@ $(function () {
         let animatedSquare = $(`.square[data-id=${n}]`);
         // console.log(`Animating square ${n}`);
         otherSquares.fadeOut();
-        animatedSquare.fadeToggle(500);
+        animatedSquare.fadeToggle(1000);
 
 
 
-    }, 200)
+    }, 1000)
 
 
 });
