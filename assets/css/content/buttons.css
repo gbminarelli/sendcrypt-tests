@@ -21,20 +21,20 @@
 
 .btn-center {
     margin: 0 auto;
-    display: block;
 }
 
 .btn-primary {
     background-color: #355FF2;
+    padding-left:3rem;
+    padding-right:3rem;
 }
 
-.btn-medium {
-    width: 40vw;
-}
+
 
 .btn-cta {
     background-color: #F13E41;
-
+    padding-left:3rem;
+    padding-right:3rem;
 }
 .btn-cta:hover {
     background-color: #B52F31;
@@ -52,36 +52,8 @@
 .btn-small {
 }
 
-.btn-cta-landing {
 
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    margin-top: 2rem;
-}
 
-/*DESKTOP ONLY CODE*/
-
-@media screen and (min-width: 700px) {
-
-    .btn-cta-landing {
-        display: block;
-        margin: 0 auto;
-        width: 20%;
-        margin-top: 2rem;
-    }
-
-}
-
-/*MOBILE ONLY CODE*/
-@media screen and (max-width: 700px) {
-
-    .btn-cta-landing {
-        display: block;
-        margin: 0 auto;
-        width: 70%;
-        margin-top: 2rem;
-    }
-}
 
 /* ------------------------------------------------------------|
 | CUSTOM BUTTON CODE
@@ -89,7 +61,7 @@
 
 /*DESKTOP ONLY CODE*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1080px) {
 
     #btn-get-started {
         display: inline-block;
@@ -97,7 +69,8 @@
     }
 }
 
-#btn-get-started {
-    margin-top: 2rem;
+
+#btn-cta-landing {
+    margin-top:2rem;
 }
 
