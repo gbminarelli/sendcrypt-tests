@@ -326,7 +326,6 @@ main {
     padding-top: 3.4rem;
     padding-right: 5rem;
     padding-left: 1rem;
-
 }
 
 .section-table-img {
@@ -340,16 +339,15 @@ main {
     height: 1rem;
     border-top: 1px solid #3A3A3A;
     background-color: white;
-    opacity:.2;
-    margin-top:3rem;
-    margin-bottom:3rem;
-
+    opacity: .2;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 
 }
 
-/* Section standard =========================================== */
+/* Section left or right =========================================== */
 
-.section-standard {
+section {
     display: inline-block;
     float: left;
 
@@ -357,9 +355,9 @@ main {
     height: auto;
     box-sizing: border-box;
     background-color: white;
+    padding-top:.5rem;
 
     /*border: solid 1px blue;*/
-
 }
 
 .section-title {
@@ -377,11 +375,13 @@ main {
     color: #495F7F;
     font-size: 1rem;
     font-family: "Quicksand Light", serif;
-    padding: 1rem;
+
     text-align: center;
     margin-top: 2rem;
+    margin-bottom:2rem;
     box-sizing: border-box;
     height: auto;
+
 
 }
 
@@ -400,17 +400,22 @@ main {
 
 @media screen and (min-width: 900px) {
 
-    .section-title {
-        display: inline-block;
-        float: right;
+    .section-align-left {
+        text-align: left;
+    }
+
+    .section-align-right {
         text-align: right;
     }
 
-    .section-content {
-        text-align: right;
+    .section-float-left {
+        display: inline-block;
+        float: left;
+    }
+
+    .section-float-right {
         display: inline-block;
         float: right;
-
     }
 
 }
@@ -431,14 +436,16 @@ main {
 
 /* Crossbrowser platform =========================================== */
 
-.cross-browser-wrapper {
-    /*border: solid 1px hotpink;*/
-    box-sizing: border-box;
-    width: 100%;
-    display: inline-block;
-    float: left;
-    margin-top: 0.3rem;
-}
+ .cross-browser-icon-wrapper {
+
+     border: solid 1px hotpink;
+             box-sizing: border-box;
+
+     width:100%;
+     text-align: center;
+     margin:0 auto;
+     display: block;
+ }
 
 .cross-browser-title {
     font-family: "Quicksand Light", serif;
@@ -448,7 +455,7 @@ main {
     padding: 1rem;
     display: block;
     width: 100%;
-    /*border: solid 1px hotpink;*/
+    border: solid 1px hotpink;
     box-sizing: border-box;
     text-align: center;
     margin-top: 0.8rem;
@@ -456,15 +463,14 @@ main {
 
 .crossbrowser-icon {
     display: inline-block;
+
     max-width: 67px;
     max-height: 67px;
-    margin: 0 auto;
+    margin-top:.8rem;
+
 }
 
-.crossbrowser-icon:nth-of-type(2) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
+
 
 /* ------------------------------------------------------------|
 | WRAPPER
@@ -501,7 +507,7 @@ main {
 *-------------------------------------------------------------*/
 
 footer {
-    margin-top:2rem;
+    margin-top: 2rem;
     font-family: "Quicksand", serif;
     background-color: #1E1E1E;
     display: inline-block;
@@ -511,17 +517,17 @@ footer {
     height: auto;
 }
 
-footer a{
-    color:inherit;
-    text-decoration:none;
+footer a {
+    color: inherit;
+    text-decoration: none;
     text-underline: none;
 }
 
 footer p {
     margin: 0 auto;
-    text-align:center;
-    color:#787878;
-    padding-top:3vh;
-    padding-bottom:1.4rem;
-    font-size:1rem;
+    text-align: center;
+    color: #787878;
+    padding: 1rem;
+    font-size: 1rem;
+
 }
