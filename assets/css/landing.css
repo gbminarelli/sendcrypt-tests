@@ -352,7 +352,7 @@ section {
     display: inline-block;
     float: left;
 
-    min-height: 20rem;
+    min-height: 15.8rem;
     height: auto;
     box-sizing: border-box;
     background-color: white;
@@ -389,7 +389,8 @@ section {
 
 .section-img img {
 
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 
     margin: 0 auto;
     display: block;
@@ -398,9 +399,43 @@ section {
     height: auto;
 }
 
+.how-it-works-img img {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    margin: 0 auto;
+    display: block;
+
+    max-width: 500px;
+    height: auto;
+}
+
+
+/*MOBILE ONLY CODE*/
+@media screen and (max-width: 1080px) {
+
+     .how-it-works-img img {
+         padding-top:4.5rem;
+     }
+
+    .section-img img {
+        padding-top: 4.5rem;
+    }
+    .section-content {
+        padding-right:.5rem !important;
+        padding-left:.5rem !important;
+    }
+}
+
+
+
 /*DESKTOP ONLY CODE*/
 
 @media screen and (min-width: 1080px) {
+
+    #how-it-works-title {
+        margin-top:10rem;
+    }
 
     .section-align-left {
         text-align: left;
@@ -419,12 +454,6 @@ section {
         display: inline-block;
         float: right;
     }
-
-}
-
-/*DESKTOP ONLY CODE*/
-
-@media screen and (min-width: 1080px) {
 
     .section-first-header {
         text-align: left;
@@ -534,7 +563,7 @@ and (max-device-width : 1400px) {
 *-------------------------------------------------------------*/
 
 footer {
-    margin-top: 2rem;
+    margin-top: 4rem;
     font-family: "Quicksand", serif;
     background-color: #1E1E1E;
     display: inline-block;
