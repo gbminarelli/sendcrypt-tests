@@ -10,11 +10,12 @@ $(function() {
     function changeActiveClass(element) {
         let windowWidth = $(document).width();
 
+        $(".navbar-menu li").removeClass("navbar-item-active"); //remove all present classes
 
         if(windowWidth >= 1080) { //change navbar classes on mobile only
-            $(".navbar-menu li").removeClass("navbar-item-active"); //remove all present classes
 
-            element.toggleClass('navbar-item-active');//add class to this item only
+
+            element.addClass('navbar-item-active');//add class to this item only
         }
     }
 

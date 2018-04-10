@@ -24,8 +24,8 @@ $(function () {
     for (let i = 0; i < 30; i++) {
         let newSquare = {
             id: i,
-            top: Math.floor(Math.random() * square_container.max_height)+'px',
-            left: Math.floor(Math.random() * square_container.max_width)+'px',
+            top: Math.floor(Math.random() * square_container.max_height) + 'px',
+            left: Math.floor(Math.random() * square_container.max_width) + 'px',
         };
         squares.push(newSquare);
     }
@@ -45,21 +45,32 @@ $(function () {
 
     //when all the squares are added, show them
 
+    function squaresInit() {
+        squaresInterval = setInterval(() => {
 
-    let squaresInterval = setInterval(() => {
+            $(".square").fadeOut();
+            //pickup random square and fade in and fade out
+            let n = Math.floor(Math.random() * squares.length);
+            let otherSquares = $(`.square[data-id!=${n}]`); //assure that other squares are not visible
+            let animatedSquare = $(`.square[data-id=${n}]`);
+            // console.log(`Animating square ${n}`);
+            otherSquares.fadeOut();
+            animatedSquare.fadeToggle(1000);
 
+
+        }, 1000)
+
+    }
+    squaresInit();
+
+
+    //we should only start the interval if the window is on focus, otherwise, all squares will be triggered at once (bug)
+    $(window).focus(function () {
+        squaresInit();
+    }).blur(function () {
         $(".square").fadeOut();
-        //pickup random square and fade in and fade out
-        let n = Math.floor(Math.random() * squares.length);
-        let otherSquares = $(`.square[data-id!=${n}]`); //assure that other squares are not visible
-        let animatedSquare = $(`.square[data-id=${n}]`);
-        // console.log(`Animating square ${n}`);
-        otherSquares.fadeOut();
-        animatedSquare.fadeToggle(1000);
-
-
-
-    }, 2000)
+        clearInterval(squaresInterval);
+    });
 
 
 });
