@@ -8,7 +8,7 @@
     <title>SendCrypt</title>
 
     <!--FAVICON-->
-    <link rel="icon" type="favicon" href="favicon.ico" sizes="16x16" />
+    <link rel="icon" type="favicon" href="favicon.ico" sizes="16x16"/>
 
 
     <!--jQUERY-->
@@ -21,7 +21,6 @@
     <script src="assets/js/modal-handler.js"></script>
 
     <link rel="stylesheet" href="assets/css/modal.css">
-
 
 
     <!--CUSTOM JAVASCRIPT-->
@@ -53,6 +52,9 @@
     <link rel="stylesheet" href="assets/fonts/helvetica-neue/stylesheet.css">
 
 
+    <!--MENU SCROLLING EFFECT-->
+    <script src="assets/js/scroll-section.js"></script>
+
 </head>
 <body>
 
@@ -74,17 +76,17 @@
         <div class="desktop-only col-md-9">
 
             <ul class="navbar-menu">
-                <li class="navbar-item-active">
+                <li class="menu-features">
                     <a href="#">Features</a>
                 </li>
-                <li>
-                    <a href="#"> How it Works</a>
+                <li class="menu-open-source">
+                    <a href="#" > Github</a>
                 </li>
-                <li>
-                    <a href="https://github.com/countable-web/sendcrypt" target="_blank"> Contribute</a>
+                <li class="menu-how-it-works">
+                    <a href="#" > How it Works</a>
                 </li>
-                <li>
-                    <a href="#"> About Us</a>
+                <li class="menu-about-us">
+                    <a href="#" > About Us</a>
                 </li>
             </ul>
 
@@ -95,18 +97,18 @@
 
     <div class="mobile-only col-sm-12" id="menu-mobile" style="display: none;">
         <ul class="navbar-menu-mobile">
-            <li>
-                <a href="#">Features</a>
+            <li class="menu-features">
+                <a href="#" >Features</a>
             </li>
-            <li>
-                <a href="#"> How it Works</a>
+            <li class="menu-how-it-works">
+                <a href="#" > How it Works</a>
             </li>
-            <li>
-                <a href="https://github.com/countable-web/sendcrypt" target="_blank"> Contribute</a>
+            <li class="menu-open-source">
+                <a href="#" > Github</a>
             </li>
 
-            <li>
-                <a href="#"> About Us</a>
+            <li class="menu-about-us">
+                <a href="#" > About Us</a>
             </li>
         </ul>
     </div>
@@ -149,7 +151,8 @@
 
     </section>
 
-    <section class="wrapper col-sm-12 col-md-12">
+    <!--SECTION FEATURES-->
+    <section class="wrapper col-sm-12 col-md-12" id="section-features">
 
 
         <!--SECTION-->
@@ -171,10 +174,9 @@
                 <div class="cross-browser-title">Cross-browser Compatibility</div>
 
 
-
-                    <span class="cross-browser-icon-wrapper">
+                <span class="cross-browser-icon-wrapper">
                            <img src="assets/gfx/landing/chrome-square.svg" alt="crossbrowser icon"
-                                      class="crossbrowser-icon">
+                                class="crossbrowser-icon">
 
                   <img src="assets/gfx/landing/firefox-square.svg" alt="crossbrowser icon" class="crossbrowser-icon">
 
@@ -230,13 +232,50 @@
 
     </section>
 
+    <span class="wrapper">
+           <div class="section-divisor col-sm-12 col-md-12"></div>
+    </span>
+
+    <section class="wrapper col-sm-12 col-md-12" id="section-open-source">
+
+
+        <!--SECTION-->
+        <div class="section-title col-sm-12 col-md-6 section-align-left" id="open-source-section">
+
+            Open Source Project
+
+
+            <div class="section-content section-align-left" style="padding-right:2rem;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet
+                dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="btn btn-primary btn-medium btn-center"><a href="https://github.com/countable-web/sendcrypt" target="_blank">Fork Us!</a></div>
+
+
+        </div>
+
+
+        <div class="section-img col-sm-12 col-md-6">
+
+            <a href="https://github.com/countable-web/sendcrypt" target="_blank"> <img src="assets/gfx/octocat.png"
+                                                                                       alt="Octocat Github"></a>
+
+
+        </div>
+
+
+    </section>
+
 
 </main>
 
 <!-- Modal structure -->
-<div id="modal" data-iziModal-fullscreen="false"  data-iziModal-title="Encrypt a file"  data-iziModal-subtitle="Its fast and secure"  data-iziModal-icon="icon-home">
+<div id="modal" data-iziModal-fullscreen="false" data-iziModal-title="Encrypt a file"
+     data-iziModal-subtitle="Its fast and secure" data-iziModal-icon="icon-home">
     <!-- Modal content -->
-<p class="modal-text">Please, click the button below to select your file...</p>
+    <p class="modal-text">Please, click the button below to select your file...</p>
 
     <form action="#" method="post" enctype="multipart/form-data" class="modal-upload-form">
         <div class="file-encrypt-wrapper">
@@ -246,16 +285,15 @@
     </form>
 
 
-
 </div>
 
 <footer class="col-sm-12 col-md-12">
 
-    <p><a href="https://github.com/countable-web/sendcrypt" target="_blank"><i class="fab fa-github"></i></a> This open source project is maintained by <a href="http://countable.ca/"
-                                                    target="_blank"><strong>Countable.ca</strong></a></p>
+    <p><a href="https://github.com/countable-web/sendcrypt" target="_blank"><i class="fab fa-github"></i></a> This open
+        source project is maintained by <a href="http://countable.ca/"
+                                           target="_blank"><strong>Countable.ca</strong></a></p>
 
 </footer>
-
 
 
 <!--CUSTOM SCRIPTS-->
