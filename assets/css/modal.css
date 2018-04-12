@@ -1,6 +1,25 @@
 
 .modal-text {
-    padding: 2rem;
+   padding-left:1rem;
+    padding-right:1rem;
+    text-align: center;
+    font-family: "Quicksand Light", serif;
+}
+
+.modal-text-info {
+    padding-left:1rem;
+    padding-right:1rem;
+    text-align: center;
+    font-family: "Quicksand Light", serif;
+    font-size:.8rem;
+    color:silver;
+}
+
+.modal-text-big {
+
+    padding:1rem;
+    font-size:1.2rem;
+    font-weight: bolder;
     text-align: center;
     font-family: "Quicksand Light", serif;
 }

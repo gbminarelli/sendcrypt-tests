@@ -57,7 +57,7 @@ $(function () {
 
 
 
-    $("#btn-cta-landing").on('click', function () {
+    $("#get-link-btn").on('click', function () {
         event.preventDefault();
         // $('#modal').iziModal('setZindex', 99999);
         // $('#modal').iziModal('open', { zindex: 99999 });

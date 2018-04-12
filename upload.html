@@ -10,59 +10,40 @@
     <!--FAVICON-->
     <link rel="icon" type="favicon" href="favicon.ico" sizes="16x16"/>
 
-
-    <!--jQUERY-->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-
-    <!--jQUERY UI-->
-        <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
-
-    <!--MODAL PLUGIN - IZIMODAL-->
-
-    <link rel="stylesheet" href="node_modules/izimodal/css/iziModal.css">
-
-    <script src="assets/js/modal-handler.js"></script>
-
-    <link rel="stylesheet" href="assets/css/modal.css">
-
-
-    <!--CUSTOM JAVASCRIPT-->
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/header-animation.js"></script>
-    <script src="assets/js/landing-animations.js"></script>
-
-
-
     <!--CONTENT-->
     <link rel="stylesheet" href="assets/css/content/buttons.css">
     <link rel="stylesheet" href="assets/css/content/icons.css">
 
     <!--CUSTOM CSS-->
-    <link rel="stylesheet" href="assets/css/section-animation.css">
     <link rel="stylesheet" href="assets/css/others/normalize.css">
     <link rel="stylesheet" href="assets/css/others/cf.css">
     <link rel="stylesheet" href="assets/css/grids/desktop-grid.css">
     <link rel="stylesheet" href="assets/css/grids/mobile-grid.css">
 
-    <!--ANIMATIONS-->
-    <link rel="stylesheet" href="assets/css/animations/landing.css">
-
-
-    <!--LANDING PAGE-->
+    <!--PAGES-->
     <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/css/upload-form.css">
 
 
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-
-    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="assets/fonts/custom-icons/flaticon.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.css">
-    <!--CUSTOM FONTS-->
     <link rel="stylesheet" href="assets/fonts/helvetica-neue/stylesheet.css">
 
 
-    <!--MENU SCROLLING EFFECT-->
-    <script src="assets/js/scroll-section.js"></script>
+    <!--jQUERY-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="assets/js/copy-clipboard.js"></script>
+
+
+    <!--MODAL PLUGIN - IZIMODAL-->
+
+    <link rel="stylesheet" href="node_modules/izimodal/css/iziModal.css">
+    <script src="assets/js/modal-handler.js"></script>
+    <link rel="stylesheet" href="assets/css/modal.css">
+
 
 </head>
 <body>
@@ -76,266 +57,138 @@
             <img src="assets/gfx/logo.svg" alt="Sendcrypt Logo" class="sendcrypt-logo">
 
         </div>
-
-        <div class="col-sm-4 mobile-only">
-            <i class="fas fa-bars navbar-menu-icon"></i>
-        </div>
-
-
-        <div class="desktop-only col-md-9">
-
-            <ul class="navbar-menu">
-                <li class="menu-features">
-                    <a href="#">Features</a>
-                </li>
-                <li class="menu-how-it-works">
-                    <a href="#" > How it Works</a>
-                </li>
-                <li class="menu-open-source">
-                    <a href="#" > Github</a>
-                </li>
-
-                <li class="menu-about-us">
-                    <a href="#" > About Us</a>
-                </li>
-            </ul>
-
-        </div>
-
-
     </nav>
 
-    <div class="mobile-only col-sm-12" id="menu-mobile" style="display: none;">
-        <ul class="navbar-menu-mobile">
-            <li class="menu-features">
-                <a href="#" >Features</a>
-            </li>
-            <li class="menu-how-it-works">
-                <a href="#" > How it Works</a>
-            </li>
-            <li class="menu-open-source">
-                <a href="#" > Github</a>
-            </li>
-
-            <li class="menu-about-us">
-                <a href="#" > About Us</a>
-            </li>
-        </ul>
-    </div>
 
 </header>
 
-
 <main class="col-sm-12 col-md-12">
 
+    <div class="upload-main-panel panel-wrapper cf">
 
-    <section class="main-section">
-
-
-        <!--CONTENT-->
-
-        <div class="main-section-title">
-            Don't trust others with your data
-
-            <span class="main-section-subtitle"> There's simply no reason to. </span>
-
-
-            <!--CUSTOM BUTTON-->
-            <div class="btn btn-cta" id="btn-cta-landing">
-                <a href="#"> Upload Your Files
-                    <img src="assets/gfx/custom-icons/upload-icon.svg" alt="upload icon" class="custom-icon"></a>
-                <!--<i class="fa fa-upload"></i>-->
-            </div>
-            <!--END CUSTOM BUTTON-->
-
-
+        <div class="upload-main-title">Upload
         </div>
-
-        <!--END CONTENT-->
-
-        <!--SVG IMG AND ANIMATION-->
-        <div class="squares">
-        </div>
-        <img src="assets/gfx/server.svg" alt="Server" id="server">
-        <img src="assets/gfx/server.svg" alt="Server" id="server2">
-
-    </section>
+        <div class="upload-main-hor-bar"></div>
 
 
+        <div class="upload-drop-area">
+            <img src="assets/gfx/upload-form/cloud.svg" alt="Cloud upload icon" class="upload-cloud-img">
 
-
-
-
-    <!--SECTION FEATURES-->
-    <section class="wrapper col-sm-12 col-md-12" id="section-features">
-
-
-        <!--SECTION-->
-        <div class="section-title col-sm-12 col-md-6 section-align-left" style=" margin-top:3rem;">
-
-            Trustless open source file sending
-
-
-            <div class="section-content section-align-left" style="padding-right:2rem;">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet
-                dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            <div class="upload-drop-area-description">
+                Click or drop your files here to upload.
+                <strong>You’ll be given an unique and secure link. Don’t lose it!</strong>
             </div>
 
-            <!--CROSS BROWSER ICONS-->
-            <div class="cross-browser-wrapper">
 
-                <div class="cross-browser-title">Cross-browser Compatibility</div>
+        </div>
+
+        <div class="upload-main-title">My Files
+        </div>
+        <div class="upload-main-hor-bar"></div>
 
 
-                <span class="cross-browser-icon-wrapper">
-                           <img src="assets/gfx/landing/chrome-square.svg" alt="crossbrowser icon"
-                                class="crossbrowser-icon">
+        <div class="files-area col-sm-12 col-md-12">
 
-                  <img src="assets/gfx/landing/firefox-square.svg" alt="crossbrowser icon" class="crossbrowser-icon">
-
-                  <img src="assets/gfx/landing/safari-square.svg" alt="crossbrowser icon" class="crossbrowser-icon">
-                    </span>
-
+            <div class="files-area-button col-sm-6 col-md-3" id="get-link-btn">
+                <i class="flaticon-link"></i>
+                <a href="#">Get link to folder</a>
             </div>
-            <!--END CROSS BROWSER ICONS-->
-
-        </div>
-
-
-        <div class="section-img col-sm-12 col-md-6 desktop-only">
-
-            <div class="section-first-table">
-
-                <img src="assets/gfx/landing/table.svg" alt="Features table" class="section-table-img">
-
-
+            <div class="files-area-button col-sm-6 col-md-3">
+                <i class="flaticon-envelope"></i>
+                E-mail link
             </div>
-        </div>
+
+            <div class="col-md-6"></div>
+
+            <table class="upload-table cf">
 
 
-    </section>
-    <!--END SECTION-->
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Size</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>
+                        <img src="assets/fonts/custom-icons/folder.svg" class="upload-panel-icon" alt="folder">
+                        Projects
+                    </td>
+                    <td>11mb</td>
+                    <td>Folder</td>
+                    <td>2018-04-10 18:30</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="assets/fonts/custom-icons/folder.svg" class="upload-panel-icon" alt="folder">
+                        Clients
+                    </td>
+                    <td>2mb</td>
+                    <td>Folder</td>
+                    <td>2018-04-10 18:30</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="assets/fonts/custom-icons/file.svg" class="upload-panel-icon" alt="file">
+                        Server.sql
+                    </td>
+                    <td>1mb</td>
+                    <td>File</td>
+                    <td>2018-04-10 18:30</td>
+                </tr>
+
+                </tbody>
 
 
-    <!--DIVISOR-->
-    <span class="wrapper">
-           <div class="section-divisor col-sm-12 col-md-12"></div>
-    </span>
-    <!--END DIVISOR-->
-
-    <!--SENSITIVE DATA SECTION-->
-    <section class="section-right wrapper col-sm-12 col-md-12" id="section-how-it-works">
-
-
-        <div class="section-title col-sm-12 col-md-6 section-align-right section-float-right" id="how-it-works-title">
-            How it Works?
-
-
-            <div class="section-content section-align-right" style="padding-left:2rem;">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat.
-            </div>
-            <a href="#">
-            <div class="btn btn-primary btn-medium btn-center" id="btn-get-started">Get Started Now</div>
-            </a>
-
-        </div>
-
-        <div class="how-it-works-img col-sm-12 col-md-6 section-float-left">
-            <img src="assets/gfx/landing/how-it-works.svg" alt="How it works">
-        </div>
-
-
-    </section>
-<!--END SENSITIVE DATA SECTION-->
-
-    <span class="wrapper">
-           <div class="section-divisor col-sm-12 col-md-12"></div>
-    </span>
-
-
-    <!--OPEN SOURCE SECTION-->
-    <section class="wrapper col-sm-12 col-md-12" id="section-open-source">
-
-
-        <!--SECTION-->
-        <div class="section-title col-sm-12 col-md-6 section-align-left" id="open-source-section">
-
-            Open Source Project
-
-
-            <div class="section-content section-align-left" style="padding-right:2rem;">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet
-                dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-            </div>
-            <a href="https://github.com/countable-web/sendcrypt" target="_blank">
-            <div class="btn btn-primary btn-medium btn-center">Fork Us!</div></a>
+            </table>
 
 
         </div>
 
 
-        <div class="section-img col-sm-12 col-md-6">
+    </div>
 
-                <a href="https://github.com/countable-web/sendcrypt" target="_blank"> <img src="assets/gfx/octocat.png" alt="Octocat Github" class="octocat"></a>
-
-
-        </div>
-
-
-    </section>
-    <!--END OPEN SOURCE SECTION-->
-
-    <span class="wrapper">
-           <div class="section-divisor col-sm-12 col-md-12"></div>
-    </span>
-
-    <!--ABOUT US SECTION-->
-    <section class="section-right wrapper col-sm-12 col-md-12" id="section-about-us">
-
-
-        <div class="section-title col-sm-12 col-md-6 section-align-right section-float-right">
-            About Us
-
-
-            <div class="section-content section-align-right" style="padding-left:2rem;">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat.
-            </div>
-            <!--<div class="btn btn-primary btn-medium btn-center">Get Started Now</div>-->
-
-        </div>
-
-        <div class="section-img col-sm-12 col-md-6 section-float-left">
-            <img src="assets/gfx/landing/countable-web.png" alt="Countable Logo">
-        </div>
-
-
-    </section>
-    <!--END SECTION-->
 
 </main>
 
+<!--MODAL-->
 <!-- Modal structure -->
-<div id="modal" data-iziModal-fullscreen="false" data-iziModal-title="Encrypt a file"
-     data-iziModal-subtitle="Its fast and secure" data-iziModal-icon="icon-home">
+<div id="modal" data-iziModal-fullscreen="false" data-iziModal-title="Get Link to File"
+     data-iziModal-subtitle="Store it somewhere safe" data-iziModal-icon="icon-home">
     <!-- Modal content -->
-    <p class="modal-text">Please, click the button below to select your file...</p>
+    <p class="modal-text">The secret link to this folder is...</p>
+    <p class="modal-text-big" id="url">https://www.sendcrypt.com/url/sh39aydyaa232sSGSdhas
 
-    <form action="#" method="post" enctype="multipart/form-data" class="modal-upload-form">
-        <div class="file-encrypt-wrapper">
-            <div class="btn btn-primary btn-medium btn-center" id="modal-upload-btn">Open</div>
-            <input type="file" name="encrypt-files" id="encrypt-files" multiple>
-        </div>
-    </form>
+
+        <a href="#" id="copy-url">
+            <i class="flaticon-copy-documents-option upload-icon-copy"></i></a>
+
+    </p>
+
+
+    <!--<form action="#" method="post" enctype="multipart/form-data" class="modal-upload-form">-->
+    <!--<div class="file-encrypt-wrapper">-->
+    <!--<div class="btn btn-primary btn-medium btn-center" id="modal-upload-btn">Open</div>-->
+    <!--<input type="file" name="encrypt-files" id="encrypt-files" multiple>-->
+    <!--</div>-->
+    <!--</form>-->
+
+    <p class="modal-text-info" id="status"></p>
 
 
 </div>
 
+
+<!--END MODAL-->
+
+
+<!--FOOTER-->
 <footer class="col-sm-12 col-md-12">
 
     <p><a href="https://github.com/countable-web/sendcrypt" target="_blank"><i class="fab fa-github"></i></a> This open
@@ -344,10 +197,11 @@
 
 </footer>
 
-
 <!--CUSTOM SCRIPTS-->
 <!--MODAL-->
 <script src="node_modules/izimodal/js/iziModal.min.js"></script>
 
+<!--CUSTOM JS-->
+<script src="assets/js/upload-form-actions.js"></script>
 </body>
 </html>

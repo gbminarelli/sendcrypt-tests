@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 11/04/2018 04:55
+  	Creation date: 12/04/2018 07:18
   	*/
 
 @font-face {
@@ -29,15 +29,18 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-key:before { content: "\f100"; }
-.flaticon-timeline:before { content: "\f101"; }
-.flaticon-close:before { content: "\f102"; }
-.flaticon-tick:before { content: "\f103"; }
-.flaticon-safari-logo:before { content: "\f104"; }
-.flaticon-firefox-logotype:before { content: "\f105"; }
-.flaticon-chrome:before { content: "\f106"; }
-.flaticon-upload:before { content: "\f107"; }
-.flaticon-garbage:before { content: "\f108"; }
+.flaticon-copy-documents-option:before { content: "\f100"; }
+.flaticon-add-a-folder-interface-symbol-of-stroke:before { content: "\f101"; }
+.flaticon-safari-logo:before { content: "\f102"; }
+.flaticon-link:before { content: "\f103"; }
+.flaticon-upload-1:before { content: "\f104"; }
+.flaticon-folder:before { content: "\f105"; }
+.flaticon-garbage:before { content: "\f106"; }
+.flaticon-key:before { content: "\f107"; }
+.flaticon-chrome:before { content: "\f108"; }
 .flaticon-list:before { content: "\f109"; }
-.flaticon-link:before { content: "\f10a"; }
-.flaticon-folder:before { content: "\f10b"; }
+.flaticon-envelope:before { content: "\f10a"; }
+.flaticon-tick:before { content: "\f10b"; }
+.flaticon-timeline:before { content: "\f10c"; }
+.flaticon-close:before { content: "\f10d"; }
+.flaticon-firefox-logotype:before { content: "\f10e"; }
