@@ -131,7 +131,7 @@ $(function () {
        
          <label for="email" class="modal-label">
          E-mail:
-            <input type="email" name="email" id="myEmail" class="modal-input" >
+            <input type="email" name="email" id="myEmail" class="modal-input">
             
                 <a href="#">
                    <div class="btn btn-primary btn-medium" id="btn-send-email">Send E-mail</div>
@@ -147,9 +147,37 @@ $(function () {
         <!--END MODAL CONTENT-->`;
         modal.iziModal('setTitle', 'E-mail your link');
         modal.iziModal('setSubtitle', 'To yourself or someone else');
+
+        $("#btn-send-email").unbind("click");
+
         $("#modal .modal-content").html(modalContent);
+        sendEmail();
         $('#modal').iziModal('open');
     });
+
+    //sending e-mail
+
+    function sendEmail() {
+        $("#btn-send-email").on("click",function(){
+
+            let email = $("#myEmail").val();
+
+            if(email) {
+                alert("sending e-mail");
+            } else {
+                alert("Error: invalid e-mail");
+            }
+
+
+
+
+        });
+
+    }
+
+
+
+
 
 
 });
