@@ -12,15 +12,27 @@ main {
 }
 
 .panel-wrapper {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
 }
 
 .upload-main-panel {
     background-color: white;
     border-radius: 1rem;
-    padding-bottom:1rem;
+    padding-bottom:3rem;
+    padding-top:1.5rem;
     margin:1rem;
+
+}
+
+/*DESKTOP ONLY CODE*/
+
+@media screen and (min-width: 1080px) {
+
+    .upload-main-panel {
+        margin: 4rem 13rem;
+    }
 
 }
 
@@ -157,4 +169,8 @@ tr:nth-of-type(even) {
 
 footer {
     margin-top: 0 !important;
+}
+
+.option-link:hover{
+    color:#355FF2;
 }

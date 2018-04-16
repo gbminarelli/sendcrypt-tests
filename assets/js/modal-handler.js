@@ -134,7 +134,7 @@ $(function () {
             <input type="email" name="email" id="myEmail" class="modal-input">
             
                 <a href="#">
-                   <div class="btn btn-primary btn-medium" id="btn-send-email">Send E-mail</div>
+                   <div class="btn btn-primary btn-medium" id="btn-send-email">Send</div>
 </a>
              
  
