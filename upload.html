@@ -41,7 +41,9 @@
     <!--MODAL PLUGIN - IZIMODAL-->
 
     <link rel="stylesheet" href="node_modules/izimodal/css/iziModal.css">
+
     <script src="assets/js/modal-handler.js"></script>
+
     <link rel="stylesheet" href="assets/css/modal.css">
 
 
@@ -93,9 +95,9 @@
                 <i class="flaticon-link"></i>
                 <a href="#">Get link to folder</a>
             </div>
-            <div class="files-area-button col-sm-6 col-md-3">
+            <div class="files-area-button col-sm-6 col-md-3" id="send-email-btn">
                 <i class="flaticon-envelope"></i>
-                E-mail link
+                <a href="#"> E-mail link</a>
             </div>
 
             <div class="col-md-6"></div>
@@ -113,7 +115,7 @@
                 </thead>
 
                 <tbody>
-                <tr>
+                <tr >
                     <td>
                         <img src="assets/fonts/custom-icons/folder.svg" class="upload-panel-icon" alt="folder">
                         Projects
@@ -157,35 +159,34 @@
 
 </main>
 
-<!--MODAL-->
-<!-- Modal structure -->
-<div id="modal" data-iziModal-fullscreen="false" data-iziModal-title="Get Link to File"
-     data-iziModal-subtitle="Store it somewhere safe" data-iziModal-icon="icon-home">
-    <!-- Modal content -->
-    <p class="modal-text">The secret link to this folder is...</p>
-    <p class="modal-text-big" id="url">https://www.sendcrypt.com/url/sh39aydyaa232sSGSdhas
 
 
-        <a href="#" id="copy-url">
-            <i class="flaticon-copy-documents-option upload-icon-copy"></i></a>
+<!--MODAL SHARE LINK -->
+<div id="modal" class="modal-share-link" data-iziModal-fullscreen="false" data-iziModal-icon="icon-home">
 
-    </p>
+    <div class="modal-content">
 
 
-    <!--<form action="#" method="post" enctype="multipart/form-data" class="modal-upload-form">-->
-    <!--<div class="file-encrypt-wrapper">-->
-    <!--<div class="btn btn-primary btn-medium btn-center" id="modal-upload-btn">Open</div>-->
-    <!--<input type="file" name="encrypt-files" id="encrypt-files" multiple>-->
-    <!--</div>-->
-    <!--</form>-->
+    </div>
+    <p class="modal-text-info status"></p>
 
-    <p class="modal-text-info" id="status"></p>
+
 
 
 </div>
+<!--END MODAL SHARE LINK-->
 
 
-<!--END MODAL-->
+
+
+
+
+<!--<form action="#" method="post" enctype="multipart/form-data" class="modal-upload-form">-->
+<!--<div class="file-encrypt-wrapper">-->
+<!--<div class="btn btn-primary btn-medium btn-center" id="modal-upload-btn">Open</div>-->
+<!--<input type="file" name="encrypt-files" id="encrypt-files" multiple>-->
+<!--</div>-->
+<!--</form>-->
 
 
 <!--FOOTER-->
@@ -201,7 +202,5 @@
 <!--MODAL-->
 <script src="node_modules/izimodal/js/iziModal.min.js"></script>
 
-<!--CUSTOM JS-->
-<script src="assets/js/upload-form-actions.js"></script>
 </body>
 </html>

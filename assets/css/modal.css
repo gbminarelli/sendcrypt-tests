@@ -1,24 +1,24 @@
 
 .modal-text {
-   padding-left:1rem;
-    padding-right:1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: center;
     font-family: "Quicksand Light", serif;
 }
 
 .modal-text-info {
-    padding-left:1rem;
-    padding-right:1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: center;
     font-family: "Quicksand Light", serif;
-    font-size:.8rem;
-    color:silver;
+    font-size: .8rem;
+    color: silver;
 }
 
 .modal-text-big {
 
-    padding:1rem;
-    font-size:1.2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
     font-weight: bolder;
     text-align: center;
     font-family: "Quicksand Light", serif;
@@ -30,6 +30,19 @@
     width: 30%;
     margin-bottom: 2rem;
 
+}
+
+.modal-label {
+
+    font-family: "Quicksand Light", serif;
+    font-size: 1rem;
+
+    display: block;
+    text-align: center;
+}
+
+.modal-input {
+    margin-left: 1rem;
 }
 
 .modal-upload-form {
@@ -51,4 +64,9 @@
     left: 0;
     top: 0;
     opacity: 0;
+}
+
+#btn-send-email {
+    margin-left:1rem;
+
 }
