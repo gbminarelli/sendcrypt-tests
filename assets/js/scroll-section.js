@@ -49,15 +49,26 @@ $(function() {
         changeActiveClass($(this));
     });
 
-
-    /* ABOUT US SECTION =========================================== */
-    $(".menu-about-us").on('click',function(){
+    /* OPEN SOURCE SECTION =========================================== */
+    $(".menu-web-crypto").on('click',function(){
 
         $('html, body').animate({
-            scrollTop: $("#section-about-us").offset().top - 50
+            scrollTop: $("#section-web-crypto").offset().top - 100
         }, 1000);
         changeActiveClass($(this));
     });
+
+
+    // /* ABOUT US SECTION =========================================== */
+
+    //menu navigation deactivated for this feature, since it would break navigation (navbar)
+    // $(".menu-about-us").on('click',function(){
+    //
+    //     $('html, body').animate({
+    //         scrollTop: $("#section-about-us").offset().top - 50
+    //     }, 1000);
+    //     changeActiveClass($(this));
+    // });
 
 
 

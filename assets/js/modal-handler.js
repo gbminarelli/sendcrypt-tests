@@ -158,26 +158,22 @@ $(function () {
     //sending e-mail
 
     function sendEmail() {
-        $("#btn-send-email").on("click",function(){
+        $("#btn-send-email").on("click", function () {
 
             let email = $("#myEmail").val();
 
-            if(email) {
-                alert("sending e-mail");
-            } else {
-                alert("Error: invalid e-mail");
+            if (!validateEmail(email)) {
+                alert("Error: Invalid e-mail");
+                return false;
             }
 
 
+            alert("Sending e-mail");
 
 
         });
 
     }
-
-
-
-
 
 
 });

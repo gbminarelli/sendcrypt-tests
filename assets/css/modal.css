@@ -32,6 +32,10 @@
 
 }
 
+.modal-content {
+    padding:2rem;
+}
+
 .modal-label {
 
     font-family: "Quicksand Light", serif;

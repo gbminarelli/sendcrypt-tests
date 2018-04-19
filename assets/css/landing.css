@@ -408,8 +408,13 @@ section {
     margin: 0 auto;
     display: block;
 
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
+}
+
+.web-crypto-svg {
+    max-width: 150px !important;
+    padding-top:3rem !important;
 }
 
 
@@ -436,7 +441,7 @@ section {
 @media screen and (min-width: 1080px) {
 
     #how-it-works-title {
-        margin-top:10rem;
+        margin-top:5rem;
     }
 
     .section-align-left {
