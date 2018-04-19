@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="447189fb-d0f8-4f5f-aeaa-83922507f638" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/credits.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/credits.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/landing.html" afterPath="$PROJECT_DIR$/landing.html" />
+      <change beforePath="$PROJECT_DIR$/assets/css/landing.css" afterPath="$PROJECT_DIR$/assets/css/landing.css" />
+      <change beforePath="$PROJECT_DIR$/assets/css/modal.css" afterPath="$PROJECT_DIR$/assets/css/modal.css" />
+      <change beforePath="$PROJECT_DIR$/assets/css/upload-form.css" afterPath="$PROJECT_DIR$/assets/css/upload-form.css" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modal-handler.js" afterPath="$PROJECT_DIR$/assets/js/modal-handler.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,30 +26,39 @@
     <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="landing.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/landing.html">
+    <leaf>
+      <file leaf-file-name="modal-handler.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/modal-handler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="377" column="114" lean-forward="false" selection-start-line="377" selection-start-column="114" selection-end-line="377" selection-end-column="114" />
+            <state relative-caret-position="1078">
+              <caret line="135" column="28" lean-forward="true" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
               <folding>
-                <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#1650#1661#0" expanded="false" />
+                <marker date="1524105240796" expanded="true" signature="2545:2734" ph="..." />
+                <marker date="1524105240796" expanded="true" signature="2636:2720" ph="..." />
+                <marker date="1524105240796" expanded="true" signature="3578:3861" ph="..." />
+                <marker date="1524105240796" expanded="true" signature="3716:3811" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="credits.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/credits.html">
+      <file leaf-file-name="modal.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/modal.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="113" column="57" lean-forward="false" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1524104771973" expanded="false" signature="6440:6458" ph="..." />
-              </folding>
+            <state relative-caret-position="356">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload-form.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/upload-form.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,9 +67,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>foote</find>
-      <find>how-it</find>
-      <find>padding-right</find>
       <find>section-content</find>
       <find>git</find>
       <find>octo</find>
@@ -87,6 +94,9 @@
       <find>icon</find>
       <find>img</find>
       <find>Just</find>
+      <find>section-table</find>
+      <find>table</find>
+      <find>text-big</find>
     </findStrings>
     <replaceStrings>
       <replace>section-right</replace>
@@ -123,15 +133,15 @@
         <option value="$PROJECT_DIR$/assets/js/upload-form-actions.js" />
         <option value="$PROJECT_DIR$/assets/css/content/buttons.css" />
         <option value="$PROJECT_DIR$/assets/js/email-validation.js" />
-        <option value="$PROJECT_DIR$/assets/css/upload-form.css" />
-        <option value="$PROJECT_DIR$/assets/css/modal.css" />
-        <option value="$PROJECT_DIR$/assets/js/modal-handler.js" />
         <option value="$PROJECT_DIR$/upload.html" />
-        <option value="$PROJECT_DIR$/assets/css/landing.css" />
         <option value="$PROJECT_DIR$/assets/js/scroll-section.js" />
         <option value="$PROJECT_DIR$/landing.html" />
         <option value="$PROJECT_DIR$/assets/css/credits.css" />
         <option value="$PROJECT_DIR$/credits.html" />
+        <option value="$PROJECT_DIR$/assets/css/landing.css" />
+        <option value="$PROJECT_DIR$/assets/js/modal-handler.js" />
+        <option value="$PROJECT_DIR$/assets/css/modal.css" />
+        <option value="$PROJECT_DIR$/assets/css/upload-form.css" />
       </list>
     </option>
   </component>
@@ -214,7 +224,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="landing&#9;FILE&#9;file://C:/Users/joaop/Desktop/sendcrypt-tests-master/landing.html" />
+    <property name="SearchEverywhereHistoryKey" value="upload-form&#9;FILE&#9;file://C:/Users/joaop/Desktop/sendcrypt-tests-master/assets/css/upload-form.css&#10;modal&#9;FILE&#9;file://C:/Users/joaop/Desktop/sendcrypt-tests-master/assets/css/modal.css&#10;modal-&#9;FILE&#9;file://C:/Users/joaop/Desktop/sendcrypt-tests-master/assets/js/modal-handler.js&#10;landing&#9;FILE&#9;file://C:/Users/joaop/Desktop/sendcrypt-tests-master/assets/css/landing.css" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -269,12 +279,12 @@
       <workItem from="1523499333494" duration="7874000" />
       <workItem from="1523580998624" duration="26000" />
       <workItem from="1523843389365" duration="5983000" />
-      <workItem from="1524102270807" duration="2499000" />
+      <workItem from="1524102270807" duration="3164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72029000" />
+    <option name="totallyTimeSpent" value="72694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -492,24 +502,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/upload-form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="174" column="18" lean-forward="false" selection-start-line="174" selection-start-column="18" selection-end-line="174" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/modal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -528,28 +524,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/landing.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="443" column="20" lean-forward="false" selection-start-line="443" selection-start-column="20" selection-end-line="443" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/modal-handler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="128" column="6" lean-forward="false" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="6" />
-          <folding>
-            <element signature="e#1650#1661#0" expanded="false" />
-            <marker date="1523849432898" expanded="true" signature="2540:2729" ph="..." />
-            <marker date="1523849432898" expanded="true" signature="2631:2715" ph="..." />
-            <marker date="1523849432898" expanded="true" signature="3568:3851" ph="..." />
-            <marker date="1523849432898" expanded="true" signature="3706:3801" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scroll-section.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -566,26 +540,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/landing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="377" column="114" lean-forward="false" selection-start-line="377" selection-start-column="114" selection-end-line="377" selection-end-column="114" />
-          <folding>
-            <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/credits.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="616">
           <caret line="113" column="57" lean-forward="false" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1524104771973" expanded="false" signature="6440:6458" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/landing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="209" column="47" lean-forward="true" selection-start-line="209" selection-start-column="47" selection-end-line="209" selection-end-column="48" />
+          <folding>
+            <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/landing.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="328" column="0" lean-forward="true" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/modal-handler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="135" column="28" lean-forward="true" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+          <folding>
+            <element signature="e#1650#1661#0" expanded="false" />
+            <marker date="1524105240796" expanded="true" signature="2545:2734" ph="..." />
+            <marker date="1524105240796" expanded="true" signature="2636:2720" ph="..." />
+            <marker date="1524105240796" expanded="true" signature="3578:3861" ph="..." />
+            <marker date="1524105240796" expanded="true" signature="3716:3811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/modal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/upload-form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

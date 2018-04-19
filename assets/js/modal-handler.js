@@ -91,7 +91,7 @@ $(function () {
         });
     }
 
-    $("#get-link-btn").on('click', function () {
+    $("#get-link-btn").on('click', function (event) {
         event.preventDefault();
 
         let modal = $("#modal");
@@ -119,7 +119,7 @@ $(function () {
 
     /* SHARING LINK AT EMAIL =========================================== */
 
-    $("#send-email-btn").on('click', function () {
+    $("#send-email-btn").on('click', function (event) {
         event.preventDefault();
 
         let modal = $("#modal");

@@ -323,17 +323,19 @@ main {
 
 .section-first-table {
     box-sizing: border-box;
-    padding-left:2rem;
-    margin-top:2rem;
+    padding-left:1rem;
+    margin-top:5rem;
     /*border: solid 1px hotpink;*/
+
 
 }
 
 .section-table-img {
     min-width: 100%;
-    /*height: auto;*/
+    height: auto;
     box-sizing: border-box;
     min-height:230px;
+    /*min-height: 10rem;*/
 
 
 }
